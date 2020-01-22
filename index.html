@@ -7,31 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thyago Volpatto Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/2bf7070f9f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Hi, I'm Thyago Volpatto!</h1>
-            <div class="content">
-                I'm a software developer working to improve my web development skills. 
-              </div>
-            <div class="columns is-mobile">
-                <div class="column">
-                    <button class="button">Button</button>
-                </div>
-                <div class="column">
-                    <button class="button">Github</button>
-                </div>
-                <div class="column">
-                    <button class="button">LinkedIn</button>
-                </div>
-                <div class="column">
-                    <button class="button">Contact</button>
-                </div>
-              </div>
+    <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navBarTransparent">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navBarTransparent" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about">
+            <span class="icon">
+              <i class="fas fa-info"></i>
+            </span>
+            <span>About</span>
+          </a>
+          <a class="navbar-item" href="#resume">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>Resume</span>
+          </a>
+          <a class="navbar-item" href="#portfolio">
+            <span class="icon">
+              <i class="fas fa-th-list"></i>
+            </span>
+            <span>Portfolio</span>
+          </a>
+          <a class="navbar-item" href="#contact">
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>Contact</span>
+          </a>
         </div>
-    </section>
+      </div>
+    </nav>
 </body>
+
+<!-- Header -->
+<section class="hero is-link is-fullheight is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">Hello! I'm
+        <h1 class="title is-1">
+          Thyago Volpatto
+        </h1>
+        <h2 class="subtitle is-3">
+          Full Stack Web Developer
+        </h2>
+      </div>
+    </div>
+  </section>
 
 </html>
