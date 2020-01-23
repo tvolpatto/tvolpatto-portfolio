@@ -1,4 +1,4 @@
-# Master of JS quiz!
+# Thyago Portfolio!
 
    A Portfolio built as a single page application using the CSS Framework Bulma.
 
