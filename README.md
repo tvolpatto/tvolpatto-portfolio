@@ -1,4 +1,4 @@
-# Thyago Portfolio!
+# Thyago's Portfolio!
 
    A Portfolio built as a single page application using the CSS Framework Bulma.
 
