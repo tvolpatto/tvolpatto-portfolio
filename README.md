@@ -2,7 +2,7 @@
 
    A Portfolio built as a single page application using the CSS Framework Bulma.
 
-   ![Portfolio](https://github.com/tvolpatto/tvolpatto-portfolio/blob/master/assets/images/screen1.PNG)
+   ![Portfolio](https://github.com/tvolpatto/tvolpatto-portfolio/blob/master/assets/images/screenshot/screen1.PNG)
 
   
 

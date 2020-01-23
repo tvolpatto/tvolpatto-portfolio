@@ -7,10 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thyago Volpatto</title>
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <!-- Font Awesome  -->
-  <script src="https://kit.fontawesome.com/2bf7070f9f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script async type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 
 <body>
@@ -74,7 +72,6 @@
     <div class="section-heading">
       <h3 class="title is-2">About Me</h3>
       <h4 class="subtitle is-5">A Brazilian without soccer skills</h4>
-
     </div>
 
     <div class="columns has-same-height is-gapless">
@@ -93,7 +90,6 @@
         <div class="card">
           <div class="card-content">
             <h3 class="title is-4">Profile</h3>
-
             <div class="content">
               <table class="table-profile">
                 <tr>
@@ -135,7 +131,6 @@
           </div>
         </div>
       </div>
-
       <div class="column">
         <!-- Skills -->
         <div class="card">
@@ -212,6 +207,7 @@
       </a>
     </div>
   </section>
+
   <!-- Portfolio -->
   <section class="section has-background-white-ter" id="portfolio">
     <div class="container">
@@ -220,86 +216,167 @@
         <h4 class="subtitle is-5">My latest works</h4>
       </div>
       <br>
-
       <div class="container portfolio-container">
-        <div class="columns">
-          <div class="column is-4">
-            <!-- project 1 -->
-            <div class="card">
-              <header class="card-header">
-                <div class="card-header-title columns is-multiline">
-                  <div class="column is-full is-pulled-left">Mood.</div>
-                  <div class=" column is-full is-pulled-right">
-                    <span class="tag is-info">WEB</span>
-                    <span class="tag is-default">Foundation</span>
-                    <span class="tag is-default">JQuery</span>
-                  </div>
+        <div id="projects-carousel">
+
+          <!-- project 1 -->
+          <div class="card card-margin">
+            <header class="card-header">
+              <div class="card-header-title columns is-multiline">
+                <div class="column is-full">
+                  <span class=" is-pulled-left">Mood.</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                    <span class="tag is-default is-info"><i class="fas fa-mobile-alt" title="Mobile Support"></i></span>
+                  </span>
                 </div>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="./assets/images/mood.png" alt="screenshot">
-                </figure>
+                <div class=" column is-full">
+                  <span class="tag is-primary">Foundation</span>
+                  <span class="tag is-default">JQuery</span>
+                </div>
               </div>
-              <footer class="card-footer">
-                <a href="https://matthewlgrimes94.github.io/mood./" target="_blank" class="card-footer-item">Preview</a>
-                <a href="https://github.com/Matthewlgrimes94/mood." target="_blank" class="card-footer-item">Source
-                  Code</a>
-              </footer>
+            </header>
+            <div class="card-content">
+              <figure class="image is-3by2">
+                <img src="./assets/images/mood.png" alt="Mood.">
+              </figure>
             </div>
+            <footer class="card-footer">
+              <a href="https://matthewlgrimes94.github.io/mood./" target="_blank" class="card-footer-item">
+                Previe
+              </a>
+              <a href="https://github.com/Matthewlgrimes94/mood." target="_blank" class="card-footer-item">
+                Source Code
+              </a>
+            </footer>
           </div>
-          <div class="column is-4">
-            <!-- project 2 -->
-            <div class="card">
-              <header class="card-header">
-                <div class="card-header-title columns is-multiline">
-                  <div class="column is-full is-pulled-left">Master of JS</div>
-                  <div class=" column is-full is-pulled-right">
-                    <span class="tag is-info">WEB</span>
-                    <span class="tag is-default">Bootstrap</span>
-                    <span class="tag is-default">JQuery</span>
-                  </div>
+
+          <!-- project 2 -->
+          <div class="card card-margin">
+            <header class="card-header">
+              <div class="card-header-title columns is-multiline">
+                <div class="column is-full">
+                  <span class=" is-pulled-left">Master of JS</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                    <span class="tag is-default is-info"><i class="fas fa-mobile-alt" title="Mobile Support"></i></span>
+                  </span>
                 </div>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="./assets/images/quiz.png" alt="screenshot">
-                </figure>
+                <div class="column is-full">
+                  <span class="tag is-primary">Bootstrap</span>
+                  <span class="tag is-default">JQuery</span>
+                </div>
               </div>
-              <footer class="card-footer">
-                <a href="https://tvolpatto.github.io/master-of-js-quizz/" target="_blank"
-                  class="card-footer-item">Preview</a>
-                <a href="https://github.com/tvolpatto/master-of-js-quizz" target="_blank"
-                  class="card-footer-item">Source Code</a>
-              </footer>
+            </header>
+            <div class="card-content">
+              <figure class="image is-3by2">
+                <img src="./assets/images/quiz.png" alt="Master of JS">
+              </figure>
             </div>
+            <footer class="card-footer">
+              <a href="https://tvolpatto.github.io/master-of-js-quizz/" target="_blank" class="card-footer-item">
+                Preview
+              </a>
+              <a href="https://github.com/tvolpatto/master-of-js-quizz" target="_blank" class="card-footer-item">
+                Source Code
+              </a>
+            </footer>
           </div>
-          <div class="column is-4">
-            <!-- project 3 -->
-            <div class="card">
-              <header class="card-header">
-                <div class="card-header-title columns is-multiline">
-                  <div class="column is-full is-pulled-left">Weather</div>
-                  <div class=" column is-full is-pulled-right level-right ">
-                    <span class="tag is-info">WEB</span>
-                    <span class="tag is-default">Bootstrap</span>
-                    <span class="tag is-default">JQuery</span>
-                    <span class="tag is-default">OpenWeather</span>
-                  </div>
+
+          <!-- project 3 -->
+          <div class="card card-margin">
+            <header class="card-header">
+              <div class="card-header-title columns is-multiline">
+                <div class="column is-full">
+                  <span class=" is-pulled-left">Weather Dashboard</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                    <span class="tag is-default is-info"><i class="fas fa-mobile-alt" title="Mobile Support"></i></span>
+                  </span>
                 </div>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="./assets/images/weather.png" alt="screenshot">
-                </figure>
+                <div class="column is-full">
+                  <span class="tag is-primary">Bootstrap</span>
+                  <span class="tag is-default">JQuery</span>
+                  <span class="tag is-danger">OpenWeather API</span>
+                </div>
               </div>
-              <footer class="card-footer">
-                <a href="https://tvolpatto.github.io/weather-dashboard/" target="_blank"
-                  class="card-footer-item">Preview</a>
-                <a href="https://github.com/tvolpatto/weather-dashboard" target="_blank" class="card-footer-item">Source
-                  Code</a>
-              </footer>
+            </header>
+            <div class="card-content">
+              <figure class="image is-3by2">
+                <img src="./assets/images/weather.png" alt="Weather Dashboard">
+              </figure>
             </div>
+            <footer class="card-footer">
+              <a href="https://tvolpatto.github.io/weather-dashboard/" target="_blank" class="card-footer-item">
+                Preview
+              </a>
+              <a href="https://github.com/tvolpatto/weather-dashboard" target="_blank" class="card-footer-item">
+                Source Code
+              </a>
+            </footer>
+          </div>
+
+          <!-- project 4 -->
+          <div class="card card-margin">
+            <header class="card-header">
+              <div class="card-header-title columns is-multiline">
+                <div class="column is-full">
+                  <span class=" is-pulled-left">Day planner</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                    <span class="tag is-default is-info"><i class="fas fa-mobile-alt" title="Mobile Support"></i></span>
+                  </span>
+                </div>
+                <div class=" column is-full">
+                  <span class="tag is-primary">Bootstrap</span>
+                  <span class="tag is-default">JQuery</span>
+                </div>
+              </div>
+            </header>
+            <div class="card-content">
+              <figure class="image is-3by2">
+                <img src="./assets/images/day-planner.png" alt="Day Planner">
+              </figure>
+            </div>
+            <footer class="card-footer">
+              <a href="https://tvolpatto.github.io/day-planner/" target="_blank" class="card-footer-item">
+                Preview
+              </a>
+              <a href="https://github.com/tvolpatto/day-planner" target="_blank" class="card-footer-item">
+                Source Code
+              </a>
+            </footer>
+          </div>
+
+          <!-- project 5 -->
+          <div class="card card-margin">
+            <header class="card-header">
+              <div class="card-header-title columns is-multiline">
+                <div class="column is-full">
+                  <span class=" is-pulled-left">First Portfolio</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                  </span>
+                </div>
+                <div class="column is-full level-right ">
+                  <span class="tag is-warning">HTML</span>
+                  <span class="tag is-primary">CSS</span>
+                </div>
+              </div>
+            </header>
+            <div class="card-content">
+              <figure class="image is-3by2">
+                <img src="./assets/images/first-portfolio.png" alt="First portfolio">
+              </figure>
+            </div>
+            <footer class="card-footer">
+              <a href="https://tvolpatto.github.io/portfolio/" target="_blank" class="card-footer-item">
+                Preview
+              </a>
+              <a href="https://github.com/tvolpatto/portfolio" target="_blank" class="card-footer-item">
+                Source Code
+              </a>
+            </footer>
           </div>
         </div>
       </div>
@@ -313,7 +390,6 @@
         <h4 class="subtitle is-5">Call me maybe</h4>
       </div>
       <br>
-
       <div class="columns">
         <div class="column is-6 is-offset-3">
           <div class="box">
@@ -368,7 +444,9 @@
       </p>
     </div>
   </footer>
-
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/2bf7070f9f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script async type="text/javascript" src="./assets/js/script.js"></script>
 </body>
-
 </html>
