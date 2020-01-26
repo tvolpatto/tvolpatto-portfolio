@@ -41,7 +41,7 @@
       padding-right: 10px;
   }
 
-  .card-margin {
-    margin-right: 6px;
+  .has-click:hover {
+    cursor: pointer;
   }
  

@@ -8,9 +8,20 @@
         burger.classList.toggle('is-active');
         menu.classList.toggle('is-active');
     });   
+
+    $("#color-change").on("click", "span", function() {
+        const newClass = $(this).attr("data-color");
+        toggleColor(newClass);
+
+      });
     
 })();
 
-function toggleColor(){
-    document.getElementsByClassName("is-changeable");
+const classes = "is-link is-success is-primary is-warning is-info";
+function toggleColor(newClass){
+   $(".is-changeable").each( (i, el) => {
+        $(el).removeClass(classes);
+        $(el).addClass(newClass);
+   });
+
 }

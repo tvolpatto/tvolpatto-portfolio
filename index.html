@@ -12,7 +12,7 @@
 
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top">
+  <nav class="navbar is-link is-changeable is-fixed-top">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="navBarTransparent">
         <span></span>
@@ -52,8 +52,21 @@
   </nav>
 
   <!-- Header -->
-  <section class="hero is-link is-light is-fullheight is-fullheight-with-navbar">
+  <section class="hero is-link is-changeable is-light is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
+      <div>
+        <span id="color-change">
+          <span class="has-click tag is-info" data-color="is-info"></span>
+          <br>
+          <span class="has-click tag is-primary" data-color="is-primary"></span>
+          <br>
+          <span class="has-click tag is-link" data-color="is-link"></span>
+          <br>
+          <span class="has-click tag is-success" data-color="is-success"></span>
+          <br>
+          <span class="has-click tag is-warning" data-color="is-warning"></span>
+        </span>
+      </div>
       <div class="container has-text-centered">
         <h1 class="title is-1">
           Hi I am Thyago Volpatto!
@@ -111,13 +124,13 @@
             </div>
             <br>
             <div class="buttons has-addons is-centered">
-              <a href="https://github.com/tvolpatto" target="_blank" class="button is-link">
+              <a href="https://github.com/tvolpatto" target="_blank" class="button is-link is-changeable">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
                 <span>Github</span>
               </a>
-              <a href="https://www.linkedin.com/in/thyago-volpatto-9b697539/" target="_blank" class="button is-link">
+              <a href="https://www.linkedin.com/in/thyago-volpatto-9b697539/" target="_blank" class="button is-link is-changeable">
                 <span class="icon">
                   <i class="fab fa-linkedin"></i>
                 </span>
@@ -198,7 +211,7 @@
     <div class="section-heading">
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">More about my past</h4>
-      <a href="./assets/docs/resume-en - Thyago Volpatto.pdf" target="_blank" class="button is-link is-medium">
+      <a href="./assets/docs/resume-en - Thyago Volpatto.pdf" target="_blank" class="is-changeable button is-link is-medium">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
@@ -225,8 +238,8 @@
                   <div class="column is-full">
                     <span class=" is-pulled-left">Mood.</span>
                     <span class="is-pulled-right">
-                      <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
-                      <span class="tag is-default is-info"><i class="fas fa-mobile-alt"
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-mobile-alt"
                           title="Mobile Support"></i></span>
                     </span>
                   </div>
@@ -259,8 +272,8 @@
                   <div class="column is-full">
                     <span class=" is-pulled-left">Master of JS</span>
                     <span class="is-pulled-right">
-                      <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
-                      <span class="tag is-default is-info"><i class="fas fa-mobile-alt"
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-mobile-alt"
                           title="Mobile Support"></i></span>
                     </span>
                   </div>
@@ -293,8 +306,8 @@
                   <div class="column is-full">
                     <span class=" is-pulled-left">Weather Dashboard</span>
                     <span class="is-pulled-right">
-                      <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
-                      <span class="tag is-default is-info"><i class="fas fa-mobile-alt"
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-mobile-alt"
                           title="Mobile Support"></i></span>
                     </span>
                   </div>
@@ -331,8 +344,8 @@
                   <div class="column is-full">
                     <span class=" is-pulled-left">Day planner</span>
                     <span class="is-pulled-right">
-                      <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
-                      <span class="tag is-default is-info"><i class="fas fa-mobile-alt"
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-mobile-alt"
                           title="Mobile Support"></i></span>
                     </span>
                   </div>
@@ -365,7 +378,7 @@
                   <div class="column is-full">
                     <span class=" is-pulled-left">First Portfolio</span>
                     <span class="is-pulled-right">
-                      <span class="tag is-default is-info"><i class="fas fa-desktop" title="Desktop Support"></i></span>
+                      <span class="tag is-default is-link is-changeable"><i class="fas fa-desktop" title="Desktop Support"></i></span>
                     </span>
                   </div>
                   <div class="column is-full level-right ">
@@ -432,7 +445,7 @@
 
               <div class="field is-grouped has-text-centered">
                 <div class="control">
-                  <button type="submit" class="button is-link is-large"><span class="icon">
+                  <button type="submit" class="button is-link is-changeable is-large"><span class="icon">
                       <i class="fas fa-envelope"></i>
                     </span>
                     <span>Send</span></button>
@@ -457,6 +470,8 @@
       </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- Font Awesome  -->
   <script src="https://kit.fontawesome.com/2bf7070f9f.js" crossorigin="anonymous"></script>
   <script async type="text/javascript" src="./assets/js/script.js"></script>
